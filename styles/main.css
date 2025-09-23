@@ -521,6 +521,30 @@ section {
     transform: scale(1.1);
 }
 
+.project-image #project-img-nextcloud {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(0.8);
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover .project-image #project-img-nextcloud {
+    transform: scale(0.9);
+}
+
+.project-image #project-img-jellyfin {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(1.7);
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover .project-image #project-img-jellyfin {
+    transform: scale(2.0);
+}
+
 .project-overlay {
     position: absolute;
     top: 0;
