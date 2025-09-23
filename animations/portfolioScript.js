@@ -72,7 +72,6 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     
     // Staggered animation for project cards
-    const projectCards = document.querySelectorAll('.project-card');
     projectCards.forEach((card, index) => {
         card.style.transitionDelay = `${index * 0.1}s`;
     });
@@ -122,7 +121,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     
     // Project card hover effects
-    const projectCards = document.querySelectorAll('.project-card');
+    // Project card hover effects
     projectCards.forEach(card => {
         card.addEventListener('mouseenter', function() {
             this.style.transform = 'translateY(-10px) scale(1.02)';
@@ -132,7 +131,6 @@ document.addEventListener('DOMContentLoaded', function() {
             this.style.transform = 'translateY(0) scale(1)';
         });
     });
-    
     // Contact item hover effects
     const contactItems = document.querySelectorAll('.contact-item');
     contactItems.forEach(item => {
