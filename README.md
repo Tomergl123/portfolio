@@ -1,5 +1,5 @@
 [![HTML5](https://img.shields.io/badge/Code-HTML5-orange?logo=html5)](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5)  
-[![CSS3](https://img.shields.io/badge/Style-CSS3-blue?logo=css3)](https://developer.mozilla.org/en-US/docs/Web/CSS)  
+[![CSS](https://img.shields.io/badge/Style-CSS3-blue?logo=css3)](https://developer.mozilla.org/en-US/docs/Web/CSS)  
 [![JavaScript](https://img.shields.io/badge/Scripting-JavaScript-yellow?logo=javascript)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)  
 [![GitHub Pages](https://img.shields.io/badge/Deployed-GitHub%20Pages-black?logo=github)](https://pages.github.com/)  
 
