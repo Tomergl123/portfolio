@@ -1,0 +1,337 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background-color: #f5f5f5;
+}
+
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #0073e6;
+  color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 100; /* Ensure navbar is above everything */
+}
+
+#navbar ul {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#navbar ul li {
+  padding: 10px;
+}
+
+#navbar ul li a {
+  position: relative;
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s, background-color 0.3s, font-weight 0.3s;
+  font-size: 18px;
+  padding: 10px;
+  display: inline-block;
+  font-weight: bold;
+}
+
+#navbar ul li a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #ffcc00;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out, background-color 0.25s ease-out;
+}
+
+#navbar ul li a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+#navbar ul li a:hover {
+  font-weight: bold;
+  color: #ffcc00;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#welcome-section {
+  height: 100vh;
+  background: linear-gradient(to right, #0066cc, #00ccff);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#welcome-section h1 {
+  font-size: 3em;
+  margin: 0;
+  margin-bottom: 20px;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 0.15em solid orange;
+  width: 0;
+  animation: typing 2.5s steps(30, end) 1s 1 normal both,
+    blink-caret 0.75s step-end infinite;
+}
+
+/* Typewriter effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 13ch;
+  }
+}
+
+/* Cursor blink effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: white;
+  }
+}
+
+.loader-wrapper {
+  position: absolute; /* Change to fixed to prevent scrolling */
+  top: 50%; /* Adjust position to center vertically */
+  left: 50%; /* Adjust position to center horizontally */
+  transform: translate(-50%, -50%); /* Center horizontally and vertically */
+  z-index: 10; /* Ensure loader is behind navbar and icons */
+}
+
+.loader {
+  width: 550px;
+  height: 550px;
+  border: 10px solid #f3f3f3;
+  border-radius: 50%;
+  animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.9);
+    opacity: 0.7;
+  }
+  50% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0.9);
+    opacity: 0.7;
+  }
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  z-index: 50; /* Ensure icons are above loader */
+}
+
+.social-icons a {
+  color: #fff;
+  font-size: 2em;
+  margin: 0 10px;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #ffcc00;
+}
+
+#projects {
+  padding: 50px;
+  background-color: #fff;
+  z-index: 20; /* Ensure content is above loader */
+}
+
+#projects h1 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.project-tile {
+  border: 2px solid #0073e6;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: #f0f8ff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  opacity: 0;
+  transform: translateY(20px);
+  text-align: center;
+}
+
+.project-tile:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+#profile-link {
+  display: block;
+  text-align: center;
+  margin: 20px auto;
+  color: #fff;
+  background: linear-gradient(to right, #0066cc, #00ccff);
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 1.2em;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: color 0.3s, background 0.3s;
+}
+
+#profile-link:hover {
+  color: #ffcc00;
+  background: linear-gradient(to right, #00ccff, #0066cc);
+}
+
+@media screen and (max-width: 768px) {
+  #navbar ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #navbar ul li {
+    margin-bottom: 10px;
+  }
+
+  #projects {
+    padding: 20px;
+  }
+}
+
+#additional-projects {
+  padding: 50px;
+  background-color: #e0f7fa;
+}
+
+#additional-projects h1 {
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+}
+
+.project-card {
+  border: 2px solid #0073e6;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px auto;
+  background-color: #f0f8ff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.6s ease-out, box-shadow 0.3s, opacity 0.6s ease-out;
+  max-width: 80%;
+  opacity: 0;
+  transform: translateX(-100%);
+}
+
+.project-card.slide-in {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.project-card h2 {
+  margin-top: 0;
+  color: #0073e6;
+}
+
+.project-card p {
+  color: #555;
+}
+
+#about-me {
+  padding: 50px;
+  background-color: #e0f7fa;
+}
+
+#about-me h2 {
+  margin-top: 0;
+  color: #0073e6;
+}
+
+#about-me p {
+  color: #555;
+}
+
+#about-me .project-card {
+  border: 2px solid #0073e6;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px auto;
+  background-color: #f0f8ff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  max-width: 80%;
+}
+
+#about-me .project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+#about-me .project-card h2 {
+  margin-top: 0;
+  color: #0073e6;
+}
+
+#about-me .project-card p {
+  color: #555;
+}
+
+#about-me h1 {
+  text-align: center;
+  color: black;
+}
+
+.education-logo {
+  max-width: 300px; /* Adjust size as needed */
+  margin-top: 10px; /* Optional spacing */
+}
+
+@media (max-width: 768px) {
+  .project-card {
+    flex-direction: column;
+    align-items: center;
+  }
+  .project-card img {
+    width: 90%;
+    height: auto;
+  }
+}
+
+.project-image {
+  width: 100%; /* Make the image take up the full width of the card */
+  height: 200px; /* Set a consistent height for the images */
+  object-fit: cover; /* Ensures the image fills the area while maintaining aspect ratio */
+  border-radius: 8px; /* Optional: Add rounded corners for better aesthetics */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow for depth */
+}

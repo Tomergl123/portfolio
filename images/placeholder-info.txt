@@ -1,0 +1,16 @@
+Placeholder Images Needed:
+
+1. profile-picture.jpg - Professional headshot of Tomer Gluzman
+2. gpa-calculator.jpg - Screenshot of the GPA calculator web application
+3. nextcloud-azure.jpg - Screenshot of NextCloud deployment on Azure
+4. jellyfin-server.jpg - Screenshot of Jellyfin media server interface
+5. vlan-lab.jpg - Screenshot of VLAN lab configuration
+6. dual-stack-lab.jpg - Screenshot of dual-stack IPv4/IPv6 lab
+
+All images should be:
+- High quality (at least 800x600px)
+- Professional looking
+- Related to the specific project/technology
+- Optimized for web (compressed but clear)
+
+You can replace these placeholder references with actual images when available.
