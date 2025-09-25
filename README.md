@@ -22,10 +22,10 @@ It highlights my background, skills, and projects as a **Computer Systems Techni
 
 ## 📂 Features
 
-- **About Section** – bio + education  
-- **Skills Section** – networking, scripting, systems administration  
+- **About Section** – Bio + Education  
+- **Skills Section** – Networking, Scripting, Systems Administration  
 - **Projects Section** – GPA Calculator, NextCloud, Jellyfin, Networking Labs  
-- **Contact Section** – LinkedIn, GitHub, phone, email  
+- **Contact Section** – LinkedIn, GitHub, Phone, Email  
 
 ---
 
