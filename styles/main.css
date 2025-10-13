@@ -836,3 +836,32 @@ section {
 ::-webkit-scrollbar-thumb:hover {
     background: var(--accent-secondary);
 }
+
+.subtle-link {
+    color: inherit;
+    text-decoration: none;
+    font-weight: 400;
+    display: inline-block;
+    transition: color 0.2s ease, font-weight 0.2s ease, transform 0.15s ease;
+}
+
+.subtle-link:hover {
+    font-weight: 600;
+    transform: scale(1.03);
+    color: #00aeff;
+    cursor: pointer;
+}
+
+.subtle-link-CST{
+    color: inherit;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    transition: color 0.2s ease, font-weight 0.2s ease, transform 0.15s ease;
+}
+
+.subtle-link-CST:hover {
+    transform: scale(1.01);
+    color: #00aeff;
+    cursor: pointer;
+}
