@@ -278,3 +278,13 @@ document.addEventListener('DOMContentLoaded', function() {
     console.log('%cBuilt with modern web technologies and attention to detail.', 'color: #b0b0b0; font-size: 12px;');
     
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+    const lastUpdated = new Date(document.lastModified);
+    document.getElementById("lastUpdated").textContent =
+        lastUpdated.toLocaleDateString("en-US", {
+            year: "numeric",
+            month: "long",
+            day: "numeric",
+        }); 
+});
